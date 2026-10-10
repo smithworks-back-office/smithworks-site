@@ -24,9 +24,12 @@
 <a class="visually-hidden" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="SmithWorks Back Office home"><img src="/assets/wordmark-primary.svg" alt="SmithWorks Back Office" width="250" height="33"></a>
+    <a class="brand" href="/" aria-label="SmithWorks Back Office home"><img class="word" src="/assets/wordmark-primary.svg" alt="SmithWorks Back Office" width="250" height="33"><img class="mark" src="/assets/mark-primary.svg" alt="SmithWorks Back Office" width="36" height="36"></a>
     <nav class="nav" aria-label="Main"><a href="/payroll.html">Payroll</a><a href="/how-it-works.html">How it works</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav-phone" href="tel:+18632880640">(863) 288-0640</a></nav>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    <div class="hdr-actions">
+      <a class="hdr-call" href="tel:+18632880640">Call<span class="hdr-num"> (863) 288-0640</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
   </div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Main (mobile)"><a href="/payroll.html">Payroll</a><a href="/how-it-works.html">How it works</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav-phone" href="tel:+18632880640">Call (863) 288-0640</a></nav>
 </header>
@@ -44,19 +47,26 @@
 <section class="alt">
   <div class="wrap">
     <h2>I run payroll so you don’t have to.</h2>
-    <p>You have enough to manage as a small business owner in construction or the trades. I give you time back to focus on your business, plus the insight to know what labor is costing you.</p>
-    <ul class="list">
-      <li><strong>I run your payroll</strong>, and you approve. Your CPA keeps your taxes. I never touch a return.</li>
-      <li><strong>I answer your calls.</strong> I’m a Polk County local who knows your business.</li>
-      <li><strong>You see clear labor costs.</strong> I provide a one-page labor report every month to inform your job costing.</li>
-    </ul>
-    <p>It’s that simple.</p>
+    <div class="cols">
+      <div>
+        <p>You have enough to manage as a small business owner in construction or the trades. I give you time back to focus on your business, plus the insight to know what labor is costing you.</p>
+      </div>
+      <div>
+        <ul class="list">
+          <li><strong>I run your payroll</strong>, and you approve. Your CPA keeps your taxes. I never touch a return.</li>
+          <li><strong>I answer your calls.</strong> I’m a Polk County local who knows your business.</li>
+          <li><strong>You see clear labor costs.</strong> I provide a one-page labor report every month to inform your job costing.</li>
+        </ul>
+        <p>It’s that simple.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2>Who I work with</h2>
+    <!-- Polk County line map slot (first month): wrap this section in <div class="cols"> and add the SVG in the second column. -->
     <p>SmithWorks Back Office is not for one-person shops, 100-person companies, or anyone who’s looking for a help desk instead of a person. I help general contractors, electricians, plumbers, HVAC, roofers, framers, landscapers, and other site-work companies of 5-25 employees with their payroll.</p>
   </div>
 </section>
@@ -64,7 +74,7 @@
 <section class="alt">
   <div class="wrap">
     <h2>Get started</h2>
-    <p class="cta"><a class="phone" href="tel:+18632880640">(863) 288-0640</a>
+    <p class="cta cta-inline"><a class="phone" href="tel:+18632880640">(863) 288-0640</a>
 <span class="or">or <a href="https://calendar.app.google/8ci6cQ7V7Muask3H9">book 15 minutes with me</a></span></p>
   </div>
 </section>

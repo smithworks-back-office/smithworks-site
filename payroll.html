@@ -24,9 +24,12 @@
 <a class="visually-hidden" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="SmithWorks Back Office home"><img src="/assets/wordmark-primary.svg" alt="SmithWorks Back Office" width="250" height="33"></a>
+    <a class="brand" href="/" aria-label="SmithWorks Back Office home"><img class="word" src="/assets/wordmark-primary.svg" alt="SmithWorks Back Office" width="250" height="33"><img class="mark" src="/assets/mark-primary.svg" alt="SmithWorks Back Office" width="36" height="36"></a>
     <nav class="nav" aria-label="Main"><a href="/payroll.html" aria-current="page">Payroll</a><a href="/how-it-works.html">How it works</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav-phone" href="tel:+18632880640">(863) 288-0640</a></nav>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    <div class="hdr-actions">
+      <a class="hdr-call" href="tel:+18632880640">Call<span class="hdr-num"> (863) 288-0640</span></a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+    </div>
   </div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Main (mobile)"><a href="/payroll.html" aria-current="page">Payroll</a><a href="/how-it-works.html">How it works</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav-phone" href="tel:+18632880640">Call (863) 288-0640</a></nav>
 </header>
@@ -48,21 +51,26 @@
   <div class="wrap">
     <h2>What happens every pay period</h2>
     <p>With SmithWorks Back Office™, your records are kept and filings are done. No guessing, no hassle.</p>
-    <ol class="steps">
-      <li>Your crew clocks in on their phones from the job site, tagged to the job. You approve the hours.</li>
-      <li>I calculate wages and overtime.</li>
-      <li>You approve.</li>
-      <li>Employees get paid by direct deposit.</li>
-      <li>Your federal and state payroll taxes are paid.</li>
-    </ol>
-    <p>New hire? I help with new hire paperwork and W-9 collection so you’re set for 1099s and W-2s at year’s end, well before the January deadline.</p>
-    <p><strong>What I don’t do: tax returns.</strong> Your CPA keeps your taxes, and I make sure payroll never gives them (or you) a surprise.</p>
+    <div class="cols">
+      <ol class="steps">
+        <li>Your crew clocks in on their phones from the job site, tagged to the job. You approve the hours.</li>
+        <li>I calculate wages and overtime.</li>
+        <li>You approve.</li>
+        <li>Employees get paid by direct deposit.</li>
+        <li>Your federal and state payroll taxes are paid.</li>
+      </ol>
+      <div>
+        <p>New hire? I help with new hire paperwork and W-9 collection so you’re set for 1099s and W-2s at year’s end, well before the January deadline.</p>
+        <p><strong>What I don’t do: tax returns.</strong> Your CPA keeps your taxes, and I make sure payroll never gives them (or you) a surprise.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
     <h2>The SmithWorks Back Office difference</h2>
+    <!-- Sample one-page labor report slot (week one): wrap the list in <div class="cols"> and place the sample report in the second column. -->
     <p>What I offer that other payroll specialists don’t:</p>
     <ul class="list">
       <li><strong>Hands-off payroll for owners.</strong> I don’t sell you software to run. Your crew taps in and out on their phones, you tap “Approve,” and I do the rest.</li>
@@ -76,14 +84,20 @@
 <section class="alt">
   <div class="wrap">
     <h2>SmithWorks Back Office pricing</h2>
-    <p>You get one service, priced simply:</p>
-    <ul class="list">
-      <li>A one-time setup fee of $750 for a clean start at the quarter, $1,250 for a mid-year conversion</li>
-      <li>A flat monthly base, plus a per-employee rate with a small per-contractor fee for subs paid through payroll</li>
-    </ul>
-    <div class="price"><p>A 10-person crew paid weekly runs about $325 a month, everything included. No contract.</p></div>
-    <p>The bottom line: I run payroll the way your company <em>actually</em> works, not the way the software wants it to. Every crew is different, and I set up payroll around your crew versus a one-size-fits-all template.</p>
-    <p><a class="button" href="/contact.html">Get a personalized quote</a></p>
+    <div class="cols">
+      <div>
+        <p>You get one service, priced simply:</p>
+        <ul class="list">
+          <li>A one-time setup fee of $750 for a clean start at the quarter, $1,250 for a mid-year conversion</li>
+          <li>A flat monthly base, plus a per-employee rate with a small per-contractor fee for subs paid through payroll</li>
+        </ul>
+      </div>
+      <div>
+        <div class="price"><p>A 10-person crew paid weekly runs about $325 a month, everything included. No contract.</p></div>
+        <p>The bottom line: I run payroll the way your company <em>actually</em> works, not the way the software wants it to. Every crew is different, and I set up payroll around your crew versus a one-size-fits-all template.</p>
+        <p><a class="button" href="/contact.html">Get a personalized quote</a></p>
+      </div>
+    </div>
   </div>
 </section>
 </main>
