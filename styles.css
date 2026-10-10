@@ -122,8 +122,14 @@ section.hero { padding-top: clamp(2.5rem, 7vw, 5rem); padding-bottom: clamp(2.5r
 .faq dd { margin: 0.35rem 0 0; max-width: var(--measure); }
 
 /* Credential line (Payroll page hero) */
-.credential { display: flex; align-items: center; gap: 1rem; margin-top: 1.5rem; max-width: var(--measure); }
-.credential img { height: 64px; width: auto; }
+.hero-grid { display: grid; gap: 2rem; }
+.credential { margin: 0; }
+.credential img { height: 120px; width: auto; }
+@media (min-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr auto; align-items: start; gap: 4rem; }
+  .credential { padding-top: 0.75rem; }
+  .credential img { height: 200px; }
+}
 
 /* Headshot slot (About) */
 .bio { display: grid; gap: 1.5rem; }
@@ -167,3 +173,28 @@ button[type="submit"]:hover, .button:hover { background: var(--navy-deep); color
 .bio.no-photo { grid-template-columns: 1fr; }
 em { font-style: italic; }
 .alt .cta-inline { margin-top: 1.25rem; }
+
+/* Sample labor report: set like the paper report itself, not a chart */
+.report { margin: 0; border: 2px solid var(--navy); background: var(--paper); font-size: 0.92rem; line-height: 1.35; font-variant-numeric: tabular-nums; }
+.report-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; padding: 0.8rem 0.9rem; border-bottom: 2px solid var(--navy); }
+.report-head strong { display: block; color: var(--navy); font-size: 1.05rem; }
+.report-head span { display: block; color: var(--slate); font-size: 0.85rem; }
+.report-tag { border: 2px solid var(--navy); color: var(--navy); font-weight: 800; font-size: 0.75rem; letter-spacing: 0.04em; padding: 0.15rem 0.5rem; white-space: nowrap; }
+.report table { width: 100%; border-collapse: collapse; }
+.report th, .report td { padding: 0.45rem 0.6rem; text-align: right; border-bottom: 1px solid var(--line); vertical-align: top; }
+.report th[scope="row"], .report thead th:first-child { text-align: left; }
+.report thead th { font-weight: 700; color: var(--slate); font-size: 0.8rem; border-bottom: 2px solid var(--line); }
+.report tbody th { font-weight: 600; color: var(--ink); }
+.report tfoot th, .report tfoot td { font-weight: 800; color: var(--navy); border-bottom: 0; border-top: 2px solid var(--navy); }
+.report-note { margin: 0; padding: 0.6rem 0.9rem; font-size: 0.85rem; color: var(--ink); background: var(--concrete); }
+.report figcaption { padding: 0.6rem 0.9rem; font-size: 0.8rem; color: var(--slate); border-top: 1px solid var(--line); }
+.report-compact { font-size: 0.95rem; }
+@media (max-width: 479px) {
+  .report { font-size: 0.82rem; }
+  .report th, .report td { padding: 0.4rem 0.4rem; }
+  .report:not(.report-compact) th:nth-child(2), .report:not(.report-compact) td:nth-child(2),
+  .report:not(.report-compact) th:nth-child(3), .report:not(.report-compact) td:nth-child(3),
+  .report:not(.report-compact) th:nth-child(5), .report:not(.report-compact) td:nth-child(5) { display: none; }
+}
+@media (min-width: 860px) { .cols.report-row { grid-template-columns: 2fr 3fr; } }
+.report-next { margin: 0; padding: 0.5rem 0.9rem; font-size: 0.85rem; color: var(--navy); font-weight: 600; border-top: 1px solid var(--line); text-align: right; }
