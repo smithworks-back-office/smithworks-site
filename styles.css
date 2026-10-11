@@ -198,3 +198,31 @@ em { font-style: italic; }
 }
 @media (min-width: 860px) { .cols.report-row { grid-template-columns: 2fr 3fr; } }
 .report-next { margin: 0; padding: 0.5rem 0.9rem; font-size: 0.85rem; color: var(--navy); font-weight: 600; border-top: 1px solid var(--line); text-align: right; }
+
+/* Full sample report */
+.report-full { max-width: 960px; margin-top: 1.5rem; }
+.report-band { padding: 0.9rem 0.9rem 1rem; border-bottom: 1px solid var(--line); }
+.report-band h3 { margin: 0 0 0.6rem; font-size: 0.8rem; font-weight: 700; color: var(--slate); letter-spacing: 0; }
+.report-band table { margin: 0; }
+.report-full .report-band table th, .report-full .report-band table td { padding-left: 0; }
+.report-full .report-band table th:first-child, .report-full .report-band table td:first-child { padding-left: 0; }
+.report-full .report-band table th:last-child, .report-full .report-band table td:last-child { padding-right: 0; }
+.kpis { display: grid; gap: 1rem 2rem; margin: 0; }
+.kpis > div { max-width: none; }
+.kpis dt { font-size: 0.85rem; font-weight: 600; color: var(--slate); }
+.kpis dd { margin: 0.1rem 0 0.25rem; font-size: clamp(1.6rem, 3vw, 2.1rem); font-weight: 800; color: var(--navy); line-height: 1.05; }
+.kpis p { margin: 0; font-size: 0.85rem; line-height: 1.4; max-width: none; }
+@media (min-width: 600px) { .kpis { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 860px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
+.report-list { list-style: none; padding: 0; margin: 0; max-width: none; }
+.report-list li { position: relative; padding-left: 1.2em; margin-bottom: 0.45em; font-size: 0.95rem; line-height: 1.4; }
+.report-list li::before { content: ""; position: absolute; left: 0; top: 0.5em; width: 0.5em; height: 0.5em; background: var(--navy); }
+.report-action { background: var(--concrete); }
+.report-action p { margin: 0; font-size: 1rem; line-height: 1.45; max-width: none; color: var(--ink); }
+.report sup { font-size: 0.65em; color: var(--slate); }
+@media (max-width: 479px) {
+  .report-full .report-band table th:nth-child(2), .report-full .report-band table td:nth-child(2),
+  .report-full .report-band table th:nth-child(3), .report-full .report-band table td:nth-child(3),
+  .report-full .report-band table th:nth-child(5), .report-full .report-band table td:nth-child(5) { display: none; }
+}
+.report-next, .report figcaption, .report-note { max-width: none; }
