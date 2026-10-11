@@ -226,3 +226,7 @@ em { font-style: italic; }
   .report-full .report-band table th:nth-child(5), .report-full .report-band table td:nth-child(5) { display: none; }
 }
 .report-next, .report figcaption, .report-note { max-width: none; }
+.kpis-2 { grid-template-columns: 1fr 1fr; }
+.report-excerpt .report-next { text-align: left; font-size: 0.95rem; }
+.report-excerpt .report-next a { font-weight: 700; }
+@media (min-width: 860px) { .report-excerpt { margin-top: 0.4rem; } }
