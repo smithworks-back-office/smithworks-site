@@ -230,3 +230,5 @@ em { font-style: italic; }
 .report-excerpt .report-next { text-align: left; font-size: 0.95rem; }
 .report-excerpt .report-next a { font-weight: 700; }
 @media (min-width: 860px) { .report-excerpt { margin-top: 0.4rem; } }
+sup.tm { font-size: 0.5em; line-height: 0; vertical-align: 0.75em; margin-left: 0.05em; font-weight: 600; letter-spacing: 0; }
+h1 sup.tm { font-size: 0.4em; vertical-align: 0.9em; }
