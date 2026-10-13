@@ -201,6 +201,7 @@ em { font-style: italic; }
 
 /* Full sample report */
 .report-full { max-width: 960px; margin-top: 1.5rem; }
+.report-after { margin-top: 1.25rem; }
 .report-band { padding: 0.9rem 0.9rem 1rem; border-bottom: 1px solid var(--line); }
 .report-band h3 { margin: 0 0 0.6rem; font-size: 0.8rem; font-weight: 700; color: var(--slate); letter-spacing: 0; }
 .report-band table { margin: 0; }
