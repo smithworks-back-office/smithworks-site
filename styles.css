@@ -36,7 +36,10 @@ a:hover { color: var(--navy-deep); }
 
 h1, h2, h3 { font-weight: 800; letter-spacing: -0.015em; line-height: 1.1; margin: 0 0 0.5em; color: var(--navy); }
 h1 { font-size: clamp(2.25rem, 5.5vw, 4rem); max-width: 18ch; }
-h2 { font-size: clamp(1.6rem, 3.2vw, 2.25rem); max-width: 24ch; }
+h2 { font-size: clamp(1.6rem, 3.2vw, 2.25rem); max-width: 24ch; text-wrap: balance; }
+h2.h2-wide { max-width: 34ch; }
+.nb { white-space: nowrap; }
+p, li { text-wrap: pretty; }
 h3 { font-size: 1.25rem; font-weight: 700; letter-spacing: 0; }
 p, ul, ol { margin: 0 0 1em; max-width: var(--measure); }
 strong { font-weight: 700; }
